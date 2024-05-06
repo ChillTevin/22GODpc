@@ -1,8 +1,5 @@
 sudo apt install xrdp -y
 sudo apt update && sudo apt upgrade && sudo apt install nano
-sudo adduser tomi &
-sudo usermod -aG sudo tomi &
-su tomi
 sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz
 sudo ./ngrok config add-authtoken 2g4Qp8FXaZVwh70L0Qbi11bU8sc_DNTPFsJY9H6SsKHH2Jqk
