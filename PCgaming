@@ -5,6 +5,10 @@ sudo apt update && sudo apt upgrade && sudo apt install nano
 echo -e "\e[32mInstalando Ngrok...\e[0m"
 sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+read -p "choose ngrok region: " CRP
+sudo ./ngrok tcp --region $CRP 3389
+read -p "Ctrl + V Authtoken: " CRP 
+sudo ./ngrok authtoken $CRP 
 echo -e "\e[33mIniciando Token\e[0m"
 sudo ./ngrok config add-authtoken 2g4Qp8FXaZVwh70L0Qbi11bU8sc_DNTPFsJY9H6SsKHH2Jqk
 echo -e "\e[36mInstalando entorno KDE Plasma\e[0m"
