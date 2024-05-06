@@ -1,9 +1,26 @@
+echo "DESCARGANDO XRDP PARA PODER INICIAR (A VER USADO EL ACHVIVO "ACCOUNT" ANTES DE INICIAR)"
 sudo apt install xrdp -y
+echo -e "\e[38;5;206mActualizando los componentes...\e[0m"
 sudo apt update && sudo apt upgrade && sudo apt install nano
+echo -e "\e[32mInstalando Ngrok...\e[0m"
 sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+echo -e "\e[33mIniciando Token\e[0m"
 sudo ./ngrok config add-authtoken 2g4Qp8FXaZVwh70L0Qbi11bU8sc_DNTPFsJY9H6SsKHH2Jqk
+echo -e "\e[36mInstalando entorno KDE Plasma\e[0m"
 sudo apt install kubuntu-desktop
 sudo nano /etc/xrdp/startwm.sh
+echo -e "\e[92mApunto de terminar solo un poco mas \e[0m"
+echo -e "\e[31mTexto con letra roja\e[0m"
+echo -e "\e[31m⢿⣿⣿⣿⣭⠹⠛⠛⠛⢿⣿⣿⣿⣿⡿⣿⠷⠶⠿⢻⣿⣛⣦⣙⠻⣿
+⣿⣿⢿⣿⠏⠀⠀⡀⠀⠈⣿⢛⣽⣜⠯⣽⠀⠀⠀⠀⠙⢿⣷⣻⡀⢿
+⠐⠛⢿⣾⣖⣤⡀⠀⢀⡰⠿⢷⣶⣿⡇⠻⣖⣒⣒⣶⣿⣿⡟⢙⣶⣮
+⣤⠀⠀⠛⠻⠗⠿⠿⣯⡆⣿⣛⣿⡿⠿⠮⡶⠼⠟⠙⠊⠁⠀⠸⢣⣿
+⣿⣷⡀⠀⠀⠀⠀⠠⠭⣍⡉⢩⣥⡤⠥⣤⡶⣒⠀⠀⠀⠀⠀⢰⣿⣿
+⣿⣿⡽⡄⠀⠀⠀⢿⣿⣆⣿⣧⢡⣾⣿⡇⣾⣿⡇⠀⠀⠀⠀⣿⡇⠃
+⣿⣿⣷⣻⣆⢄⠀⠈⠉⠉⠛⠛⠘⠛⠛⠛⠙⠛⠁⠀⠀⠀⠀⣿⡇⢸
+⢞⣿⣿⣷⣝⣷⣝⠦⡀⠀⠀⠀⠀⠀⠀⠀⡀⢀⠀⠀⠀⠀⠀⠛⣿⠈
+⣦⡑⠛⣟⢿⡿⣿⣷⣝⢧⡀⠀⠀⣶⣸⡇⣿⢸⣧⠀⠀⠀⠀⢸⡿⡆
+⣿⣿⣷⣮⣭⣍⡛⠻⢿⣷⠿⣶⣶⣬⣬⣁⣉⣀⣀⣁⡤⢴⣺⣾⣽⡇\e[0m"
 sudo sed -i.bak '/fi/a xfce4-session \n' /etc/xrdp/startwm.sh
 sudo service xrdp start && sudo ./ngrok tcp --region=us 3389
