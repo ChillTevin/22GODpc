@@ -10,7 +10,6 @@ sudo ./ngrok tcp --region $CRP 3389
 read -p "Ctrl + V Authtoken: " CRP 
 sudo ./ngrok authtoken $CRP 
 echo -e "\e[33mIniciando Token\e[0m"
-sudo ./ngrok config add-authtoken 2g4Qp8FXaZVwh70L0Qbi11bU8sc_DNTPFsJY9H6SsKHH2Jqk
 echo -e "\e[36mInstalando entorno KDE Plasma\e[0m"
 sudo apt install kubuntu-desktop
 sudo nano /etc/xrdp/startwm.sh
