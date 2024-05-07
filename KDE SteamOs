@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Script para configurar el entorno de KDE Plasma como SteamOS
+
+# Verificar si el usuario tiene KDE Plasma instalado
+if [ "$XDG_CURRENT_DESKTOP" != "KDE" ]; then
+  echo "Este script está diseñado para entornos KDE Plasma. Asegúrate de tener KDE instalado." 1>&2
+  exit 1
+fi
+
+# Instalar el tema de plasma y ajustes adicionales
+echo "Instalando tema y ajustes para SteamOS-like look..."
+# Instalar el tema "Breeze Dark" (o cualquier otro tema oscuro que prefieras)
+# Puedes ajustar esta parte dependiendo de tu gestor de paquetes y tema deseado
+# Ejemplo con apt (para temas en Ubuntu/Debian)
+# apt install --no-install-recommends -y plasma-desktop breeze
+# Aplicar el tema Breeze Dark
+# Look Steam
