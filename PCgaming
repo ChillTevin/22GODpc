@@ -6,9 +6,9 @@ sudo apt install xrdp -y
 echo -e "\e[38;5;206mActualizando los componentes...\e[0m"
 sudo apt update && sudo apt upgrade && sudo apt install nano
 echo -e "\e[31mInstalando Steam Gaming Cloud\e[0m"
-sudo curl -O https://github.com/tomi20134/Scrip-de-instalacion-de-escritorio-Online/raw/main/IIBP
-sudo chmod +x IIBP
-sudo ./IIBP
+sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/IIBP23426.sh
+sudo chmod +x IIBP23426.sh
+sudo ./IIBP23426.sh
 sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/INP.sh
 sudo chmod +x INP.sh
 sudo ./INP.sh
