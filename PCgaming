@@ -5,6 +5,10 @@ echo "DESCARGANDO XRDP PARA PODER INICIAR (A VER USADO EL ACHVIVO "ACCOUNT" ANTE
 sudo apt install xrdp -y
 echo -e "\e[38;5;206mActualizando los componentes...\e[0m"
 sudo apt update && sudo apt upgrade && sudo apt install nano
+echo -e "\e[31mInstalando Steam Gaming Cloud\e[0m"
+sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/Install_Steam.sh
+sudo chmod +x Install_Steam.sh
+sudo ./Install_Steam
 echo -e "\e[32mInstalando Ngrok...\e[0m"
 sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz
