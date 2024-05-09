@@ -9,9 +9,9 @@ echo -e "\e[31mInstalando Steam Gaming Cloud\e[0m"
 sudo curl -O https://github.com/tomi20134/Scrip-de-instalacion-de-escritorio-Online/raw/main/IIBP
 sudo chmod +x IIBP
 sudo ./IIBP
-sudo curl -O https://github.com/tomi20134/Scrip-de-instalacion-de-escritorio-Online/raw/main/Instalador_Navegador.sh
-sudo chmod +x Instalador_Navegador.sh
-sudo ./Instalador_Navegador.sh
+sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/INP.sh
+sudo chmod +x INP.sh
+sudo ./INP.sh
 echo -e "\e[32mInstalando Ngrok...\e[0m"
 sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz
