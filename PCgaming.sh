@@ -1,6 +1,7 @@
-sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/Account
-sudo chmod +x Account
-sudo ./Account
+sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/Account.sh
+sudo chmod +x Account.sh
+sudo ./Account.sh
+sudo apt --fix-broken install
 echo "DESCARGANDO XRDP PARA PODER INICIAR (A VER USADO EL ARCHIVO 'ACCOUNT' ANTES DE INICIAR)"
 sudo apt install xrdp -y
 echo -e "\e[38;5;206mActualizando los componentes...\e[0m"
