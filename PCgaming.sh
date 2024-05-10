@@ -20,6 +20,7 @@ sudo ngrok config add-authtoken 1uNKiNAV8XVggSemelPcZmjYXuI_5zQY3FmebAtuHBhx2YuW
 echo -e "\e[33mIniciando Token\e[0m"
 echo -e "\e[36mInstalando entorno KDE Plasma\e[0m"
 sudo apt install kubuntu-desktop -y
+sudo nano /etc/xrdp/startwm.sh
 sudo sed -i.bak '/fi/a xfce4-session \n' /etc/xrdp/startwm.sh
 echo -e "\e[92mApunto de terminar solo un poco más \e[0m"
 echo -e "\e[31mTexto con letra roja\e[0m"
