@@ -2,7 +2,11 @@
 
 # Instalar Steam
 sudo apt update
-sudo apt install -y libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386
+sudo dpkg --add-architecture i386
+sudo apt-get update  
+sudo apt-get upgrade
+sudo apt-get install libgl1-mesa-glx
+sudo apt-get install libgl1-mesa-glx:i386
 sudo wget https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb -O /tmp/steam.deb
 sudo dpkg --install /tmp/steam.deb 
 
