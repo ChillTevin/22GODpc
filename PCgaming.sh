@@ -1,6 +1,8 @@
 sudo curl -O https://github.com/ChillTevin/22GODpc/raw/main/Account.sh
 sudo chmod +x Account.sh
 sudo ./Account.sh
+sudo apt-get install qemu-system
+sudo apt-get install qemu-user-static
 sudo apt --fix-broken install
 echo "DESCARGANDO XRDP PARA PODER INICIAR (A VER USADO EL ARCHIVO 'ACCOUNT' ANTES DE INICIAR)"
 sudo apt install xrdp -y
