@@ -18,7 +18,7 @@ sudo ./INP.sh
 echo -e "\e[32mInstalando Ngrok...\e[0m"
 sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz
-sudo ngrok config add-authtoken 1uNKiNAV8XVggSemelPcZmjYXuI_5zQY3FmebAtuHBhx2YuW5
+sudo ./ngrok config add-authtoken 1uNKiNAV8XVggSemelPcZmjYXuI_5zQY3FmebAtuHBhx2YuW5
 echo -e "\e[33mIniciando Token\e[0m"
 echo -e "\e[36mInstalando entorno KDE Plasma\e[0m"
 sudo apt install kubuntu-desktop -y
